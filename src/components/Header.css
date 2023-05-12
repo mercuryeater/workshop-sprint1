@@ -1,0 +1,40 @@
+.header {
+    background: linear-gradient(
+      90deg,
+      rgb(105, 114, 231) 0%,
+      rgb(40, 40, 212) 23%,
+      rgb(66, 61, 167) 100%
+    );
+    /* margin: -35px -35px 0 -35px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px;
+    color: aliceblue;
+  }
+  
+  .header__left {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding: 5px;
+    margin-right: 10px;
+  } 
+  
+  .header__left__title {
+    font-size: 36px;
+    margin-left: 30px;
+  }
+  
+  .header__links {
+    margin-right: 30px;
+    font-size: 20px;
+    color: azure;
+  }
+  
+  .active {
+    color: rgb(255, 4, 4)
+
+  }
+
+  
