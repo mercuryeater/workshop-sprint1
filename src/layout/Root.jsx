@@ -1,6 +1,6 @@
 import { Outlet, useNavigation } from 'react-router-dom'
 
-import Header from '../components/Header'
+import Header from '../components/Header/Header'
 
 const Root = () => {
   const navigation = useNavigation()

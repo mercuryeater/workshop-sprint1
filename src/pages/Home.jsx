@@ -1,4 +1,4 @@
-// import ProductCard from "../components/ProductCard";
+import ProductCard from "../components/ProductCard/ProductCard";
 import {useLoaderData} from "react-router-dom"
 
 function Home() {
@@ -11,13 +11,13 @@ function Home() {
         <div>
         <h1>Esto es Home</h1>
         <ul>
-            {products.map((product, index) => {
+            {products.map((product, index) => (
                 <li key={index}>
                     {product.title}
                 </li>
-            })}
+            ))}
         </ul>
-        {/* <ProductCard /> */}
+        <ProductCard />
         </div>
     )
 }
