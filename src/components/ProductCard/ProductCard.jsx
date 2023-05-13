@@ -1,22 +1,29 @@
-import "./ProductCard.scss"
+import "./ProductCard.scss";
 
-function ProductCard() {
-    return (
-        <div className="product">
-            <div className="product__image">
-                <img src="profile.jpg" alt="Image product" className="product__image__src"/>
-            </div>
-            <h2 className="product__title">Title</h2>
-            <nav className="product__footer">
-                <button className="product__footer__btn">Details</button>  
-                <div className="product__footer__timer">
-                <h3 >Timer</h3>
-                </div>           
-            </nav>
-        </div>        
-    )
+function ProductCard({ product }) {
+  const { title, image, id } = product;
+  
+  const handleDetails = () => {
+    console.log('Hola mundo')
+  }
+
+
+  return (
+    <div className="product">
+      <div className="product__image">
+        <img src={image} alt="Image product" className="product__image__src" />
+      </div>
+      <div className="product__info">
+        <h2 className="product__info__title">{title}</h2>
+        <nav className="product__info__footer">
+          <button className="product__info__footer__btn" onClick={handleDetails}>Details of {id}</button>
+          <div className="product__info__footer__timer">
+            <h3>Timer</h3>
+          </div>
+        </nav>
+      </div>
+    </div>
+  );
 }
 
 export default ProductCard;
-
-

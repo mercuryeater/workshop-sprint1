@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <h1 className="header__left__title">Store Whatever</h1>
+        <h1 className="header__left__title">Store</h1>
       </div>
       <div className="header__links">
       <NavLink to="/" className="header__links">
@@ -13,9 +13,6 @@ function Header() {
         </NavLink>
         <NavLink to="/about" className="header__links">
           About
-        </NavLink>
-        <NavLink to="/ProductDetail" className="header__links">
-          Pricing
         </NavLink>
       </div>
     </div>

@@ -1,8 +1,17 @@
 body {
   margin: 0;
-  background-color: #f0f2ef ;
+  /* background-color: #f0f2ef ; */
 }
 
 nav {
   display: flex;
+}
+
+main {
+  display:flex;
+}
+
+#root {
+  display: flex;
+  flex-wrap: wrap;
 }

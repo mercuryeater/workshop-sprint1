@@ -3,7 +3,7 @@ import { createBrowserRouter } from "react-router-dom";
 import Home, { loaderProducts } from "../pages/Home";
 import Root from "../layout/Root";
 import About from "../pages/About";
-import ProductDetail from "../pages/ProductDetail";
+import ProductDetail, {loaderProductDetail} from "../pages/ProductDetail";
 import Header from "../components/Header/Header";
 
 import "../App.css";
@@ -23,8 +23,9 @@ const router = createBrowserRouter([
         element: <About />,
       },
       {
-        path: "/ProductDetail",
+        path: "/detail/:id",
         element: <ProductDetail />,
+        loader: loaderProductDetail,
       },
     ],
   },
