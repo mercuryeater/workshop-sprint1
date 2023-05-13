@@ -14,7 +14,6 @@ const Root = () => {
             : <Outlet />
         }
       </main>
-      <footer>Footer</footer>
     </>
   )
 }

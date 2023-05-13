@@ -1,0 +1,23 @@
+.card {
+  display: flex;
+  margin: 50px auto;
+  width: 700px;
+  box-shadow: 5px 5px 20px 2px rgba(165, 165, 165, 0.2);
+  border-radius: 20px;
+
+  &__image {
+    width: 400px;
+    
+
+    &__src {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 17px 0px 0px 17px;
+    }
+  }
+
+  &__info {
+    margin: 15px;
+  }
+}
