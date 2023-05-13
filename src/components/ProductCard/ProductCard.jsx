@@ -1,12 +1,12 @@
+import { NavLink } from "react-router-dom";
 import "./ProductCard.scss";
 
 function ProductCard({ product }) {
   const { title, image, id } = product;
-  
-  const handleDetails = () => {
-    console.log('Hola mundo')
-  }
 
+  const handleDetails = () => {
+    console.log("Hola mundo");
+  };
 
   return (
     <div className="product">
@@ -16,7 +16,14 @@ function ProductCard({ product }) {
       <div className="product__info">
         <h2 className="product__info__title">{title}</h2>
         <nav className="product__info__footer">
-          <button className="product__info__footer__btn" onClick={handleDetails}>Details of {id}</button>
+          <NavLink to={`/detail/${id}`} className="header__links">
+            <button
+              className="product__info__footer__btn"
+              onClick={handleDetails}
+            >
+              Details of {id}
+            </button>
+          </NavLink>
           <div className="product__info__footer__timer">
             <h3>Timer</h3>
           </div>
