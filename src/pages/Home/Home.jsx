@@ -1,5 +1,5 @@
 import { useLoaderData } from "react-router-dom";
-import ProductCard from "../components/ProductCard/ProductCard";
+import ProductCard from "../../components/ProductCard/ProductCard";
 import "./Home.scss"
 
 function Home() {
