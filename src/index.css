@@ -8,11 +8,13 @@ nav {
   display: flex;
 }
 
-main {
-  display:flex;
-}
 
 #root {
   display: flex;
   flex-wrap: wrap;
+  justify-content: center;
+}
+
+div {
+  display: flex;
 }

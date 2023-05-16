@@ -1,23 +1,63 @@
 .card {
   display: flex;
-  margin: 50px auto;
-  width: 700px;
+  margin: 50px 30px;
+  max-width: 900px;
   box-shadow: 5px 5px 20px 2px rgba(165, 165, 165, 0.2);
   border-radius: 20px;
 
   &__image {
-    width: 400px;
-    
-
     &__src {
-      width: 100%;
-      height: 100%;
+      width: 250px;
+      // height: 100%;
       object-fit: cover;
       border-radius: 17px 0px 0px 17px;
     }
   }
 
   &__info {
-    margin: 15px;
+    flex-direction: column;
+    margin: 20px;
+    max-width: 600px;
+    flex-grow: 4;
+    font-weight: 500;
+    text-align: justify;
+
+    &__description {
+      margin-bottom: 30px;
+    }
+
+    &__titleList {
+      margin: 0;
+    }
+
+    &__list {
+      padding-left: 20px;
+    }
+
+    &__links {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-evenly;
+      align-items: center;
+
+      &__github {
+        text-decoration: none;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .card {
+    flex-direction: column;
+
+    &__image {
+      &__src {
+        width: 100%;
+        // height: 100%;
+        object-fit: cover;
+        border-radius: 17px 17px 0px 0px;
+      }
+    }
   }
 }

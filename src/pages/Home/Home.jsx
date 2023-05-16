@@ -1,9 +1,11 @@
 import { useLoaderData } from "react-router-dom";
 import ProductCard from "../../components/ProductCard/ProductCard";
-import "./Home.scss"
+import "./Home.scss";
 
 function Home() {
   const { products } = useLoaderData();
+  const evenTime = 60; 
+  const oddTime = 180;
 
   return (
     <div className="products">
@@ -11,7 +13,11 @@ function Home() {
       <ul className="products__list">
         {products.map((product, index) => (
           <li className="products__list__item" key={index}>
-            <ProductCard product={product} />
+            {index % 2 === 0 ? (
+              <ProductCard product={product} forTimer={oddTime} />
+            ) : (
+              <ProductCard product={product} forTimer={evenTime} />
+            )}
           </li>
         ))}
       </ul>
