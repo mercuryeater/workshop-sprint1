@@ -18,3 +18,7 @@ nav {
 div {
   display: flex;
 }
+
+hr {
+  width: 100%;
+}

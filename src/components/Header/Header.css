@@ -26,10 +26,11 @@
     margin-right: 30px;
     font-size: 20px;
     color: azure;
+    text-decoration: none;
   }
   
   .active {
-    color: rgb(255, 4, 4)
+    color: #ccc4be;
 
   }
 

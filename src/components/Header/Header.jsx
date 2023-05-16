@@ -5,12 +5,14 @@ function Header() {
   return (
     <div className="header">
       <div className="header__left">
-        <h1 className="header__left__title">Store</h1>
+        <NavLink to="/" className="header__links">
+          <h1 className="header__left__title">Store</h1>
+        </NavLink>
       </div>
       <div className="header__links">
-      <NavLink to="/" className="header__links">
+        {/* <NavLink to="/" className="header__links">
           Home
-        </NavLink>
+        </NavLink> */}
         <NavLink to="/about" className="header__links">
           About
         </NavLink>
