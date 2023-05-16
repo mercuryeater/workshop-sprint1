@@ -39,10 +39,23 @@
       // border: 2px solid red;
       align-items: center;
 
+      &__btn {
+        color: azure;
+        background-color: #628395;
+        border-radius: 20px;
+        font-size: 15px ;
+        border: none;
+        padding: 5px 10px;
+      }
 
+      &__btn:disabled {
+        background-color: #2431383f;
+        color: rgb(158, 158, 158);
+      }
       &__timer {
-        //   width: 50px;
+        color: #628395;
       }
     }
   }
 }
+

@@ -28,12 +28,12 @@ function About() {
           <li className="card__info__list__item">
             Also it was my first time using a library I searched on my own, I
             used it for the timer but the first time didn't work because I used
-            and old library that wasn't up to date with my react version, I had
-            to change it to make it work.
+            an old library that wasn't up to date with my react version, I had
+            to try another package to make it work.
           </li>
           <li className="card__info__list__item">
             At the same time this was a good practice of the update of "react
-            router" with the new way fo create routes with the RouterProvider,
+            router" with the new way to create routes with the RouterProvider,
             then the createBrowserRouter and finally the useLoader data to fetch
             the data from the API, avoiding the use of a useEffect. I liked it,
             however as the old way to do it keeps being the most used I'll opt
